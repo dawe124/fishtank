@@ -169,6 +169,7 @@ body {
 .eyes {
     display: flex;
     justify-content: flex-end;
+    animation: eyes 7s infinite linear;
 }
 
 .eye {
@@ -392,5 +393,29 @@ body {
         transform: rotateY(0deg);
         transform-origin: right;
         background: rgb(233, 94, 1)
+    }
+}
+
+@keyframes eyes {
+    0% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+    63% {
+        transform: translateY(0px);
+    }
+    65% {
+        transform: translateY(-2px);
+    }
+    75% {
+        transform: translateY(2px);
+    }
+    85% {
+        transform: translateY(0px);;
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
